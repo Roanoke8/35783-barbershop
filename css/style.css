@@ -8,3 +8,60 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: 'PT Sans Narrow', Arial, sans-serif;
+  text-transform: uppercase;
+}
+.btn-reset {
+  padding: 0;
+  border: 0;
+  background: none;
+}
+.btn {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #663d15;
+  color: #ffffff;
+}
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.wrapper {
+  width: 100%;
+}
+.header-container,
+.main-container,
+.footer-container {
+  width: 960px;
+  margin: 0 auto;
+  background-color:
+}
+.header-wrapper {
+  background-color: #000000;
+
+}
+.header-container {
+  display: flex;
+}
+.nav-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 540px;
+}
+.nav-item-link {
+  color: #ffffff;
+}
