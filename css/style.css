@@ -14,6 +14,13 @@ body {
   font-size: 14px;
   font-family: 'PT Sans Narrow', Arial, sans-serif;
   text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: #000000;
+}
+.site-wrapper {
+  background-image: url(../img/layer.png);
+  background-position: -448px 72px;
 }
 .btn-reset {
   padding: 0;
@@ -46,12 +53,9 @@ body {
   margin: 0 auto;
   background-color:
 }
-.header-wrapper {
-  background-color: #000000;
-
-}
 .header-container {
   display: flex;
+  padding: 0 10px;
 }
 .nav-wrapper {
   display: flex;
@@ -60,8 +64,65 @@ body {
 .nav-list {
   display: flex;
   flex-wrap: wrap;
-  width: 540px;
+}
+
+.nav-item:first-child {
+  margin-left: 21px;
+}
+.nav-item-link:hover,
+.nav-item-link:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: 0;
 }
 .nav-item-link {
+  display: block;
+  padding: 26px 20px 26px 20px;
+  width: 100%;
+  height: 100%;
+
   color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.header-logo {
+  margin: 60px auto 0 292px;
+  order: 2;
+}
+.user-block {
+  margin: 0 20px 0 auto;
+  padding: 0;
+}
+.user-item {
+}
+.user-item-link:hover,
+.user-item-link:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: 0;
+}
+
+.user-item-link{
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 26px 20px 26px 35px;
+  position: relative;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.user-item-link::before{
+
+  content: "";
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 29px;
+  left: 10px;
+  background-image: url(../img/login-enter.svg);
+
 }
