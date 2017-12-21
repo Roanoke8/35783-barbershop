@@ -5,7 +5,7 @@
     <title>HTML Academy: Барбершоп</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
   </head>
   <body>
     <div class="site-wrapper">
@@ -46,28 +46,29 @@
         <div class="main-container">
           <section class="main-about">
             <div class="about-container">
-              <ul class="about-list">
+              <ul class="about-list list-reset">
                 <li class="about-item">
-                  <span class="about-item-header">Быстро</span>
+                  <p class="about-item-header">Быстро</p>
                   <p class="about-item-main">
-                    мы делаем свою работу быстро!
-                    два часа пролетят незаметно и вы — счастливый
+                    мы делаем свою работу быстро! два часа<br>
+                    пролетят незаметно и вы — счастливый<br>
                     обладатель стильной стрижки-минутки!
                   </p>
                 </li>
                 <li class="about-item">
-                  <span class="about-item-header">Круто</span>
+                  <p class="about-item-header">Круто</p>
                   <p class="about-item-main">
-                    забудьте, как вы стриглись раньше.
-                    мы сделаем из вас звезду футбола или кино!
+                    забудьте, как вы стриглись раньше.<br>
+                    мы сделаем из вас звезду футбола или кино!</br>
+                    во всяком случае внешне.
                   </p>
                 </li>
                 <li class="about-item">
-                  <span class="about-item-header">Дорого</span>
+                  <p class="about-item-header">Дорого</p>
                   <p class="about-item-main">
-                    наши мастера — профессионалы своего дела
-                    и не могут стоить дешево. к тому же,
-                    разве цена не дает определеный статус?
+                    наши мастера — профессионалы своего дела и<br>
+                    не могут стоить дешево. к тому же, разве цена<br>
+                    не дает определеный статус?
                   </p>
                 </li>
               </ul>
@@ -77,21 +78,25 @@
           <section class="main-news">
             <article class="news-container">
               <b class="news-header">Новости</b>
-              <p class="news-item">
-                нам наконец завезли ягермайстер!
-                теперь вы можете пропустить стаканчик во время стрижки
-                <time datetime="2017-01-11">11 Января</time>
-              </p>
-              <p class="news-item">
-                в нашей команде пополнение, борис «бритва» стригунец,
-                обладaтель множества титулов и наград пополнил наши стройные ряды
-                <time datetime="2017-01-18">18 Января</time>
-              </p>
+              <div class="news-post-container">
+                <p class="news-item">
+                  нам наконец завезли ягермайстер!
+                  теперь вы можете пропустить стаканчик во время стрижки
+                </p>
+                <time class="news-time" datetime="2017-01-11">11 Января</time>
+              </div>
+              <div class="news-post-container">
+                <p class="news-item">
+                  в нашей команде пополнение, борис «бритва» стригунец,
+                  обладaтель множества титулов и наград пополнил наши стройные ряды
+                </p>
+                <time class="news-time" datetime="2017-01-18">18 Января</time>
+              </div>
               <p class="news-button">
                 <a href="#">Все новости</a>
               </p>
             </article>
-            <p class="news-gallery">
+            <div class="news-gallery">
               <b class="news-gallery-header">Фотогалерея</b>
               <p class="news-slider-container">
                 <p class="news-slider-photo">
@@ -104,7 +109,7 @@
                 <button class="slider-button button-prev">Назад</button>
                 <button class="slider-button button-next">Вперед</button>
               </p>
-            </p>
+            </div>
           </section>
 
           <section class="main-info">
