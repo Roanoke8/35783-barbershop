@@ -54,7 +54,6 @@ body {
 .footer-container {
   width: 960px;
   margin: 0 auto;
-  background-color:
 }
 .header-container {
   display: flex;
@@ -130,7 +129,7 @@ body {
   width: 300px;
 }
 .main-container{
-  padding: 0 10px;
+  padding: 0 9px 0 11px;
 }
 .about-item .about-item-header {
   margin: 0;
@@ -166,13 +165,13 @@ body {
 }
 
 .main-about {
-  margin-bottom: 60px;
+  margin-bottom: 68px;
 }
 .main-news {
   background-color: #f7f4f1;
   background-image: url(../img/layout-news.jpg);
   display: flex;
-  padding: 50px 80px;
+  padding: 45px 79px 50px 81px;
   color: #000000;
 }
 .main-news b{
@@ -184,7 +183,7 @@ body {
   padding-right: 10px;
 }
 .news-item {
-  margin: 0 0 10px 0;
+  margin: 0 0 3px 0;
   padding: 0;
   font-size: 14px;
   line-height: 24px;
@@ -196,12 +195,12 @@ body {
 }
 .news-button {
   margin: 0;
-  margin-top: 35px;
+  margin-top: 34px;
   padding: 0;
 }
 .news-button a{
   display: inline-block;
-  padding: 15px 33px;
+  padding: 14px 34px 14px 34px;
   background-color: #000000;
   color: #ffffff;
   font-weight: bold;
@@ -212,29 +211,166 @@ body {
   background-color: #663d15;
 }
 .news-post-container {
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 26px;
 }
 .news-gallery {
   width: 300px;
   margin-left: auto;
 }
+.news-gallery-header {
+  margin-left: 1px;
+}
+.news-slider-container {
+  margin-top: 22px;
+}
 .news-slider-photo {
+  margin: 0 0 35px 0;
   border: 7px solid #ffffff;
 }
 .slider-button {
   position: relative;
+  font-family: 'PT Sans Narrow', Arial, sans-serif;
   width: 140px;
   background-color: #000000;
   border: none;
-  padding: 15px;
+  font-size: 13px;
+  padding: 15px 0 15px 0;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
 }
-.slider-button:hover {
+.slider-button:hover:not(.not-active-buttom) {
   background-color: #663d15;
 }
+.not-active-buttom {
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: default;
+}
 .button-next {
-  right: -17px;
+  right: -18px;
+}
+.main-info {
+  display: flex;
+  padding: 45px 80px 50px 81px;
+  margin-top: 36px;
+  background-color: #f7f4f1;
+  background-image: url(../img/layout-news.jpg);
+}
+.info-block {
+  width: 330px;
+  color: #000000;
+}
+.info-header {
+  font-size: 30px;
+  line-height: 42px;
+}
+.info-address{
+  margin: 18px 0 21px 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.info-work-time {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.info-button {
+  margin: 23px 0 0 0px;
+}
+.info-button a{
+  position: relative;
+  width: 140px;
+  display: inline-block;
+  padding: 14px 0 13px 0;
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  vertical-align: baseline;
+  text-align: center;
+}
+.info-button a:hover {
+  background-color: #663d15;
+}
+.info-button a:last-child {
+  right: -18px;
+}
+.info-register {
+  width: 300px;
+  margin-left: auto;
+  margin-right: 0;
+  color: #000000;
+}
+.register-header {
+  padding-left: 3px;
+}
+.register-header b{
+  font-size: 30px;
+  line-height: 42px;
+}
+.register-header p {
+  margin: 18px 0 3px 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  font-family: 'PT Sans Narrow', Arial, sans-serif;
+
+}
+.register-form {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.register-input-name{
+  margin: 0;
+  margin-left: 17px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.register-form-input {
+  width: 140px;
+  border: 2px solid #000000;
+  padding: 0;
+  padding: 7px 15px 6px 15px;
+  margin-top: 7px;
+  font-size: 14px;
+  color: #716f6e;
+  font-family: 'PT Sans Narrow', Arial, sans-serif;
+  font-weight: bold;
+  line-height: 24px;
+  -webkit-appearance: none;
+          appearance: none;
+
+}
+.register-form label {
+  margin-top: 9px;
+}
+input[type="date"]::-webkit-outer-spin-button,
+input[type="date"]::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.register-form-input:hover {
+  -webkit-appearance: none;
+          appearance: none;
+}
+.register-form-submit {
+  margin-top: 20px;
+  border: none;
+  background-color: #000000;
+  width: 100%;
+  padding: 15px 0;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'PT Sans Narrow', Arial, sans-serif;
+
 }

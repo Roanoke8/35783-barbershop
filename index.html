@@ -98,67 +98,67 @@
             </article>
             <div class="news-gallery">
               <b class="news-gallery-header">Фотогалерея</b>
-              <p class="news-slider-container">
+              <div class="news-slider-container">
                 <p class="news-slider-photo">
                   <img src="img/gallery-slide1.jpg" alt="Первый слад" width="286" height="164">
                 </p>
-                <button class="slider-button button-prev">Назад</button>
+                <button class="slider-button button-prev not-active-buttom">Назад</button>
                 <button class="slider-button button-next">Вперед</button>
-              </p>
+              </div>
             </div>
           </section>
 
           <section class="main-info">
-            <p class="info-block">
+            <div class="info-block">
               <b class="info-header">
                 КОНТАКТНАЯ ИНФОРМАЦИЯ
               </b>
               <p class="info-address">
-                барбершоп «бородинский»
-                адрес: г. санкт-петербург, б. конюшенная, д. 19/8
+                барбершоп «бородинский»<br>
+                адрес: г. санкт-петербург, б. конюшенная, д. 19/8<br>
                 телефон: +7 (495) 666-02-66
               </p>
               <p class="info-work-time">
-                время работы:
-                пн—пт: с 10:00 до 22:00
+                время работы:<br>
+                пн—пт: с 10:00 до 22:00<br>
                 сб—вс: с 10:00 до 19:00
               </p>
               <p class="info-button">
                 <a href="">Как проехать</a>
                 <a href="">Обратная связь</a>
               </p>
-            </p>
-            <p class="info-registr">
-              <p class="registr-header">
-                <b class="">
+            </div>
+            <div class="info-register">
+              <div class="register-header">
+                <b>
                   ЗАПИСАТЬСЯ
                 </b>
-                <p class="">
+                <p>
                   Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
                 </p>
-              </p>
-              <p class="register-form">
-                <form action="">
-                  <label for="">
-                    <span>Дата</span>
-                    <input type="date">
+              </div>
+              <div class="register-form-wrap">
+                <form class="register-form" action="">
+                  <label>
+                    <p class="register-input-name">Дата</p>
+                    <input class="register-form-input" type="date" name="register-form" value="2011-08-10">
                   </label>
-                  <label for="">
-                    <span>Время</span>
-                    <input type="time">
+                  <label>
+                    <p class="register-input-name">Время</p>
+                    <input class="register-form-input" type="time" name="register-form" value="10:00">
                   </label>
-                  <label for="">
-                    <span>Ваше имя</span>
-                    <input type="text">
+                  <label>
+                    <p class="register-input-name">Ваше имя</p>
+                    <input class="register-form-input" type="text" name="register-form" placeholder="Борода">
                   </label>
-                  <label for="">
-                    <span>Телефон</span>
-                    <input type="tel">
+                  <label>
+                    <p class="register-input-name">Телефон</p>
+                    <input class="register-form-input" type="tel" name="register-form" placeholder="+7 123 456-78-90">
                   </label>
-                  <button type="button" name="button">Отправить</button>
+                  <button class="register-form-submit" type="submit" name="register-form">Отправить</button>
                 </form>
-              </p>
-            </p>
+              </div>
+            </div>
           </section>
         </div>
       </main>
