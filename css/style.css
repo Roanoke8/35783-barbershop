@@ -208,10 +208,33 @@ body {
   text-decoration: none;
   vertical-align: baseline;
 }
+.news-button a:hover {
+  background-color: #663d15;
+}
 .news-post-container {
   margin-top: 30px;
 }
 .news-gallery {
   width: 300px;
   margin-left: auto;
+}
+.news-slider-photo {
+  border: 7px solid #ffffff;
+}
+.slider-button {
+  position: relative;
+  width: 140px;
+  background-color: #000000;
+  border: none;
+  padding: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.slider-button:hover {
+  background-color: #663d15;
+}
+.button-next {
+  right: -17px;
 }
