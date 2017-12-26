@@ -429,6 +429,7 @@ input[type="date"]::-webkit-inner-spin-button {
   height: 100%;
   padding: 0 10px;
   padding-top: 65px;
+  padding-bottom: 40px;
 }
 .footer-address {
   width: 320px;
