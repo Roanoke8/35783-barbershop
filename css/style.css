@@ -378,7 +378,7 @@ body {
   color: #716f6e;
 
   border: 2px solid #000000;
-  cursor: pointer;
+  cursor: text;
 
   -webkit-appearance: none;
           appearance: none;
@@ -397,10 +397,15 @@ input[type="date"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
           appearance: none;
 }
+.register-form-input:focus {
+  outline: 0;
+  border-color: #663d15;
+}
 .register-form-submit {
   width: 100%;
   margin-top: 20px;
   padding: 15px 0;
+  cursor: pointer;
 
   font-weight: bold;
   font-family: "PT Sans Narrow", Arial, sans-serif;
@@ -409,4 +414,92 @@ input[type="date"]::-webkit-inner-spin-button {
 
   background-color: #000000;
   border: none;
+}
+.register-form-submit:hover {
+  background-color: #663d15;
+}
+.footer-color {
+  margin-bottom: 0;
+  margin-top: 40px;
+  min-height: 192px;
+  background-color: #222222;
+}
+.footer-container {
+  display: flex;
+  height: 100%;
+  padding: 0 10px;
+  padding-top: 65px;
+}
+.footer-address {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.footer-address a {
+  color: #ffffff;
+}
+.footer-link-tel {
+  text-decoration: none;
+}
+.footer-social {
+  width: 142px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+}
+.footer-social b {
+  text-align: center;
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.social-item-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: #000000;
+}
+.social-item-link svg{
+  margin: auto;
+}
+.social-item-link:hover {
+  background-color: #ffffff;
+}
+.social-item-link:hover path{
+  fill: #000;
+}
+.footer-copyright {
+  margin: 0 0 0 auto;
+}
+.footer-copyright b{
+  text-align: center;
+}
+.footer-logo {
+  margin: 0;
+  padding: 0;
+}
+.footer-logo a {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.footer-logo a:hover {
+  background-color: #663d15;
+
 }
