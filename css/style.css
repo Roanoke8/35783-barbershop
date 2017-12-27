@@ -19,6 +19,13 @@ body {
 
   background-color: #000000;
 }
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 .site-wrapper {
   background-image: url(../img/layer.jpg);
   background-position: -448px 72px;
@@ -47,6 +54,9 @@ body {
   padding: 0;
 
   list-style: none;
+}
+.modal-show {
+  display: block;
 }
 .wrapper {
   width: 100%;
@@ -503,4 +513,137 @@ input[type="date"]::-webkit-inner-spin-button {
 .footer-logo a:hover {
   background-color: #663d15;
 
+}
+.user-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.user-modal-block {
+  position: relative;
+  width: 460px;
+  min-height: 385px;
+  padding: 50px 80px 58px 80px;
+  background-color: #f7f4f1;
+  background-image: url(../img/layout-news.jpg);
+  color: #000000;
+  margin: 100px auto;
+}
+.user-modal-close {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 19px;
+  height: 19px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image:  url(../img/cross-white.png);
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.user-modal-header p{
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+}
+.user-modal-header span{
+  display: block;
+  margin-top: 28px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.user-input-name {
+  width: 300px;
+  margin-top: 16px;
+  padding: 8px 25px 8px 10px;
+  border-color: #000000;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  color: #000000;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.user-input-password {
+  width: 300px;
+  margin-top: 10px;
+  padding: 8px 25px 8px 10px;
+  border-color: #000000;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  color: #000000;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.user-input-name::placeholder,
+.user-input-password::placeholder {
+  color: #000000;
+}
+.user-input-name:focus,
+.user-input-password:focus {
+  border-color: #663d15;
+  outline: none;
+}
+.user-remind-block {
+  display: flex;
+  margin-top: 20px;
+}
+.remind-checkbox span{
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.remind-checkbox span::before{
+  content: "";
+  top: 0;
+  margin-right: 12px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000000;
+  cursor: pointer;
+}
+.remind-input-checkbox[type="checkbox"]:checked ~ span::before {
+  background-image: url(../img/cross.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 10px;
+}
+
+.remind-link {
+  margin: 0 0 0 auto;
+  color: #000000;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+
+}
+.user-modal-form button{
+  width: 300px;
+  margin-top: 20px;
+  padding: 13px 10px;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #000000;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.user-modal-form button:hover{
+  background-color: #663d15;
+}
+.modal-show {
+  display: block;
 }

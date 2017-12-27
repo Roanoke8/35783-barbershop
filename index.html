@@ -138,7 +138,7 @@
                 </p>
               </div>
               <div class="register-form-wrap">
-                <form class="register-form" action="">
+                <form class="register-form" action="https://echo.htmlacademy.ru">
                   <label>
                     <p class="register-input-name">Дата</p>
                     <input class="register-form-input" type="date" name="register-form" value="2011-08-10">
@@ -149,11 +149,11 @@
                   </label>
                   <label>
                     <p class="register-input-name">Ваше имя</p>
-                    <input class="register-form-input" type="text" name="register-form" placeholder="Борода">
+                    <input class="register-form-input" type="text" name="register-form" placeholder="Борода" required>
                   </label>
                   <label>
                     <p class="register-input-name">Телефон</p>
-                    <input class="register-form-input" type="tel" name="register-form" placeholder="+7 123 456-78-90">
+                    <input class="register-form-input" type="tel" name="register-form" placeholder="+7 123 456-78-90" required>
                   </label>
                   <button class="register-form-submit" type="submit" name="register-form">Отправить</button>
                 </form>
@@ -206,5 +206,35 @@
         </div>
       </footer>
     </div>
+    <section class="user-modal">
+      <div class="user-modal-block">
+        <div class="user-block-container">
+          <button class="user-modal-close" type="button" name="button"></button>
+          <div class="user-modal-header">
+            <p>Личный кабинет</p>
+            <span>введите пожалуйста свой логин и пароль</span>
+          </div>
+          <div>
+            <form  class="user-modal-form" action="index.html" method="get" name="user-form">
+              <label>
+                <input class="user-input-name" id="user-input-name" type="text" name="user-form" placeholder="ЛОГИН" required>
+              </label>
+              <label>
+                <input class="user-input-password" id="user-input-password" type="password" name="user-form" placeholder="ПАРОЛЬ" required>
+              </label>
+              <div class="user-remind-block">
+                <label class="remind-checkbox">
+                  <input class="visually-hidden remind-input-checkbox" type="checkbox" name="user-form" value="remind-me">
+                  <span>Запомнить меня</span>
+                </label>
+                <a class="remind-link" href="#">Я забыл пароль!</a>
+              </div>
+              <button type="submit" name="user-form">Войти</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    <section>
+      <script type="text/javascript" src="js/javascript.js"></script>
   </body>
 </html>
