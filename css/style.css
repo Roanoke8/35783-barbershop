@@ -647,3 +647,19 @@ input[type="date"]::-webkit-inner-spin-button {
 .modal-show {
   display: block;
 }
+.modal-show-animation {
+  animation-name: modal;
+  animation-duration: 300ms;
+}
+@keyframes modal {
+  from {
+    transform: translateY(-556px);
+  }
+  80% {
+    transform: translateY(20px)
+  }
+  to {
+    transform: translateY(0px);
+
+  }
+}
