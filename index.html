@@ -124,8 +124,8 @@
                 сб—вс: с 10:00 до 19:00
               </p>
               <p class="info-button">
-                <a href="">Как проехать</a>
-                <a href="">Обратная связь</a>
+                <a class="info-callmaps-button" href="">Как проехать</a>
+                <a class="info-callback-button" href="">Обратная связь</a>
               </p>
             </div>
             <div class="info-register">
@@ -209,7 +209,7 @@
     <section class="user-modal">
       <div class="user-modal-block modal-show-animation">
         <div class="user-block-container">
-          <button class="user-modal-close" type="button" name="button"></button>
+          <button class="user-modal-close" type="close" name="button"></button>
           <div class="user-modal-header">
             <p>Личный кабинет</p>
             <span>введите пожалуйста свой логин и пароль</span>
@@ -234,7 +234,15 @@
           </div>
         </div>
       </div>
-    <section>
-      <script type="text/javascript" src="js/javascript.js"></script>
+    </section>
+    <section class="maps-modal modal-show-animation">
+      <div class="maps-block">
+        <button class="maps-button-close" type="close" name="button"></button>
+        <div class="maps-block-container">
+          <iframe src="https://yandex.ru/map-widget/v1/-/CBa2YEFdhC" width="770" height="565" frameborder="0"></iframe>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="js/javascript.js"></script>
   </body>
 </html>
