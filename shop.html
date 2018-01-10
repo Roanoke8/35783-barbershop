@@ -66,42 +66,43 @@
           </section>
           <section class="catalog-container">
             <div class="catalog-filters">
+              <form id="form-shop" name="form-shop" action="https://echo.htmlacademy.ru">
               <div class="manufactures">
                 <h3>Производители:</h3>
                 <ul class="manufactures-list list-reset">
                   <li class="manufactures-item">
                     <label>
-                      <input class="visually-hidden manufactures-checkbox" type="checkbox" checked>
+                      <input class="visually-hidden manufactures-checkbox" type="checkbox"  value="Baxter-of-California" form="form-shop" name="checkbox" checked>
                       <span>Baxter of California</span>
                     </label>
                   </li>
                   <li class="manufactures-item">
                     <label>
-                      <input class="visually-hidden manufactures-checkbox" type="checkbox">
+                      <input class="visually-hidden manufactures-checkbox" type="checkbox" value="Mr-Natty" form="form-shop" name="checkbox">
                       <span>Mr Natty</span>
                     </label>
                   </li>
                   <li class="manufactures-item">
                     <label>
-                      <input class="visually-hidden manufactures-checkbox" type="checkbox" checked>
+                      <input class="visually-hidden manufactures-checkbox" type="checkbox" value="Suavecito" form="form-shop" name="checkbox" checked>
                       <span>Suavecito</span>
                     </label>
                   </li>
                   <li class="manufactures-item">
                     <label>
-                      <input class="visually-hidden manufactures-checkbox" type="checkbox">
+                      <input class="visually-hidden manufactures-checkbox" type="checkbox" value="Malin+Goetz" form="form-shop" name="checkbox">
                       <span>Malin+Goetz</span>
                     </label>
                   </li>
                   <li class="manufactures-item">
                     <label>
-                      <input class="visually-hidden manufactures-checkbox" type="checkbox">
+                      <input class="visually-hidden manufactures-checkbox" type="checkbox" value="Murray’s" form="form-shop" name="checkbox">
                       <span>Murray’s</span>
                     </label>
                   </li>
                   <li class="manufactures-item">
                     <label>
-                      <input class="visually-hidden manufactures-checkbox" type="checkbox" checked>
+                      <input class="visually-hidden manufactures-checkbox" type="checkbox" value="American-Crew" form="form-shop" name="checkbox" checked>
                       <span>American Crew</span>
                     </label>
                   </li>
@@ -111,28 +112,29 @@
                 <h3>Группы товаров:</h3>
                 <ul class="group-list list-reset">
                   <li class="group-item">
-                    <label for="">
-                      <span>
-                        Бритвенные<br>
-                        принадлежности
-                       </span>
-                      <input class="visually-hidden" type="radio" name="group-radio">
+                    <label>
+                      <input class="visually-hidden group-radio" type="radio" value="Shaving-accessories" name="group-radio" form="form-shop">
+                      <span>Бритвенные принадлежности</span>
                     </label>
                   </li>
                   <li class="group-item">
-                    <label for="">
+                    <label>
+                      <input class="visually-hidden group-radio" type="radio" value="Means-for-care" name="group-radio" form="form-shop" checked>
                       <span>Средства для ухода</span>
-                      <input class="visually-hidden" type="radio" name="group-radio">
                     </label>
                   </li>
                   <li class="group-item">
-                    <label for="">
+                    <label>
+                      <input class="visually-hidden group-radio" type="radio" value="accessories" name="group-radio" form="form-shop">
                       <span>Аксессуары</span>
-                      <input class="visually-hidden" type="radio" name="group-radio">
                     </label>
+                  </li>
+                  <li class="group-item">
+                    <button form="form-shop" type="submit" value="submit name="checkbox"" name="button">Показать</button>
                   </li>
                 </ul>
               </div>
+              </form>
             </div>
             <div class="cards-catalog">
               <ul class="cards-list list-reset">
@@ -141,13 +143,13 @@
                     <img src="img\content-img1.png" alt="" width="220" height="165">
                   </a>
                   <a class="cards-item-footer" href="">
-                    <span class="">
+                    <span class="cards-item-name">
                       Набор для путешествий<br>
-                      «Baxter of California»
+                      <b>«Baxter of California»</b>
                     </span>
-                    <p class="cards-block-button">
+                    <p class="cards-block-info">
                       <span class="cards-block-price">
-                      2900
+                        2900
                       </span>
                       <button class="cards-block-button">
                         Купить
@@ -160,13 +162,13 @@
                     <img src="img\content-img2.png" alt="" width="220" height="165">
                   </a>
                   <a class="cards-item-footer" href="">
-                    <span class="">
+                    <span class="cards-item-name">
                       Увлажняющий кондиционер<br>
-                      «Baxter of California»
+                      <b>«Baxter of California»</b>
                     </span>
-                    <p class="cards-block-button">
+                    <p class="cards-block-info">
                       <span class="cards-block-price">
-                      750
+                        750
                       </span>
                       <button class="cards-block-button">
                         Купить
@@ -179,11 +181,11 @@
                     <img src="img\content-img3.png" alt="" width="220" height="165">
                   </a>
                   <a class="cards-item-footer" href="">
-                    <span class="">
+                    <span class="cards-item-name">
                       Гель для волос<br>
-                      «SUAVECITO»
+                      <b>«SUAVECITO»</b>
                     </span>
-                    <p class="cards-block-button">
+                    <p class="cards-block-info">
                       <span class="cards-block-price">
                       290
                       </span>
@@ -198,11 +200,11 @@
                     <img src="img\content-img4.png" alt="" width="220" height="165">
                   </a>
                   <a class="cards-item-footer" href="">
-                    <span class="">
+                    <span class="cards-item-name">
                       Глина для укладки волос<br>
-                      «American crew»
+                      <b>«American crew»</b>
                     </span>
-                    <p class="cards-block-button">
+                    <p class="cards-block-info">
                       <span class="cards-block-price">
                       500
                       </span>
@@ -217,11 +219,11 @@
                     <img src="img\content-img5.png" alt="" width="220" height="165">
                   </a>
                   <a class="cards-item-footer" href="">
-                    <span class="">
+                    <span class="cards-item-name">
                       Гель для волос<br>
-                      «AMERICAN CREW»
+                      <b>«AMERICAN CREW»</b>
                     </span>
-                    <p class="cards-block-button">
+                    <p class="cards-block-info">
                       <span class="cards-block-price">
                       300
                       </span>
@@ -236,11 +238,11 @@
                     <img src="img\content-img6.png" alt="" width="220" height="165">
                   </a>
                   <a class="cards-item-footer" href="">
-                    <span class="">
+                    <span class="cards-item-name">
                       Набор для бритья<br>
-                      «Baxter of California»
+                      <b>«Baxter of California»</b>
                     </span>
-                    <p class="cards-block-button">
+                    <p class="cards-block-info">
                       <span class="cards-block-price">
                       3900
                       </span>
