@@ -12,6 +12,12 @@ userEnter.addEventListener("click", function(evt){
   userModal.classList.add("modal-show");
   modalFocus.focus();
 });
+function func() {
+  userModal.classList.add("modal-show");
+  modalFocus.focus();
+  console.log( 'Показать окно' );
+  }
+  setTimeout(func, 25000);
 
 buttonClose.addEventListener("click", function(evt){
   evt.preventDefault();
